@@ -14,6 +14,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var playerView: UIView!
     @IBOutlet weak var startStopButton: UIButton!
 
+    var player: AVPlayer!
+    
     func configureView() {
         // Update the user interface for the detail item.
         guard let detail = detailItem else { return }
@@ -21,7 +23,7 @@ class DetailViewController: UIViewController {
         print(url)
         
         let videoURL = URL(string: url)
-        let player = AVPlayer(url: videoURL!)
+        player = AVPlayer(url: videoURL!)
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = self.view.bounds
         
@@ -39,6 +41,11 @@ class DetailViewController: UIViewController {
         configureView()
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        player.pause()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
