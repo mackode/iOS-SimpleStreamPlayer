@@ -14,7 +14,6 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     var detailViewController: DetailViewController? = nil
     var managedObjectContext: NSManagedObjectContext? = nil
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -53,9 +52,6 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             let firstTextField = alertController.textFields![0] as UITextField
             let secondTextField = alertController.textFields![1] as UITextField
             
-            let context = self.fetchedResultsController.managedObjectContext
-            let newPlaylist = Playlist(context: context)
-            
             guard let playlistName = firstTextField.text, !playlistName.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty else {
                 return
             }
@@ -63,6 +59,9 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             guard let playlistUrl = secondTextField.text, !playlistUrl.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty, self.verifyUrl(urlString: playlistUrl) else {
                 return
             }
+            
+            let context = self.fetchedResultsController.managedObjectContext
+            let newPlaylist = Playlist(context: context)
             
             newPlaylist.name = playlistName
             newPlaylist.url = playlistUrl
@@ -98,7 +97,6 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     // MARK: - Segues
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
@@ -112,7 +110,6 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     // MARK: - Table View
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return fetchedResultsController.sections?.count ?? 0
     }
@@ -150,10 +147,10 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     func configureCell(_ cell: UITableViewCell, withPlaylist playlist: Playlist) {
         cell.textLabel!.text = playlist.name
+        //cell.detailTextLabel!.text = playlist.url
     }
 
     // MARK: - Fetched results controller
-
     var fetchedResultsController: NSFetchedResultsController<Playlist> {
         if _fetchedResultsController != nil {
             return _fetchedResultsController!
