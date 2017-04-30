@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var startStopButton: UIButton!
 
     var player: AVPlayer!
+    var playing: Bool!
     
     func configureView() {
         // Update the user interface for the detail item.
@@ -29,6 +30,7 @@ class DetailViewController: UIViewController {
         
         playerView.layer.addSublayer(playerLayer)
         player.play()
+        playing = true
     }
 
     override func viewDidLoad() {
@@ -44,6 +46,19 @@ class DetailViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         player.pause()
+        playing = false
+    }
+    
+    @IBAction func stopStartButtonTapped(_ sender: Any) {
+        if playing {
+            player.pause()
+            playing = false
+            startStopButton.setTitle("Play", for: .normal)
+        } else {
+            player.play()
+            playing = true
+            startStopButton.setTitle("Stop", for: .normal)
+        }
     }
     
     override func didReceiveMemoryWarning() {

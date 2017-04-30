@@ -47,6 +47,9 @@
                                     <constraint firstAttribute="width" constant="46" id="JVR-Zd-EGX"/>
                                 </constraints>
                                 <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopStartButtonTapped:" destination="JEX-9P-axG" eventType="touchUpInside" id="A7p-Fr-KBe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
