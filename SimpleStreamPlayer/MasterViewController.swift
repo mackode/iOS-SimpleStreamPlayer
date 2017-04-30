@@ -38,6 +38,12 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         // Dispose of any resources that can be recreated.
     }
 
+    func verifyUrl (urlString: String?) -> Bool {
+        guard let urlString = urlString else { return false }
+        guard let url = URL(string: urlString) else { return false }
+        return UIApplication.shared.canOpenURL(url)
+    }
+    
     func insertNewObject(_ sender: Any) {
         let alertController = UIAlertController(title: "Add Playlist", message: "", preferredStyle: .alert)
         
@@ -50,9 +56,16 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             let context = self.fetchedResultsController.managedObjectContext
             let newPlaylist = Playlist(context: context)
             
-            // If appropriate, configure the new managed object.
-            newPlaylist.name = firstTextField.text
-            newPlaylist.url = secondTextField.text
+            guard let playlistName = firstTextField.text, !playlistName.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty else {
+                return
+            }
+            
+            guard let playlistUrl = secondTextField.text, !playlistUrl.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty, self.verifyUrl(urlString: playlistUrl) else {
+                return
+            }
+            
+            newPlaylist.name = playlistName
+            newPlaylist.url = playlistUrl
             
             // Save the context.
             do {
@@ -71,10 +84,11 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         })
         
         alertController.addTextField { (textField : UITextField!) -> Void in
-            textField.placeholder = "Enter First Name"
+            textField.placeholder = "Enter Name"
         }
+        
         alertController.addTextField { (textField : UITextField!) -> Void in
-            textField.placeholder = "Enter Second Name"
+            textField.placeholder = "Enter Url"
         }
         
         alertController.addAction(addAction)
