@@ -1,0 +1,6 @@
+framework module Pods_SimpleStreamPlayerTests {
+  umbrella header "Pods-SimpleStreamPlayerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

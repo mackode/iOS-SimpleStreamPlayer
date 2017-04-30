@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D618DA1EB51662004DD49C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D618D91EB51662004DD49C /* AppDelegate.swift */; };
+		01D618DD1EB51662004DD49C /* SimpleStreamPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01D618DB1EB51662004DD49C /* SimpleStreamPlayer.xcdatamodeld */; };
+		01D618DF1EB51662004DD49C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D618DE1EB51662004DD49C /* MasterViewController.swift */; };
+		01D618E11EB51662004DD49C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D618E01EB51662004DD49C /* DetailViewController.swift */; };
+		01D618E41EB51662004DD49C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D618E21EB51662004DD49C /* Main.storyboard */; };
+		01D618E61EB51662004DD49C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D618E51EB51662004DD49C /* Assets.xcassets */; };
+		01D618E91EB51662004DD49C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D618E71EB51662004DD49C /* LaunchScreen.storyboard */; };
+		01D618F41EB51663004DD49C /* SimpleStreamPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D618F31EB51663004DD49C /* SimpleStreamPlayerTests.swift */; };
+		01D618FF1EB51663004DD49C /* SimpleStreamPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D618FE1EB51663004DD49C /* SimpleStreamPlayerUITests.swift */; };
+		0B6EF6EF978554955F1D020C /* Pods_SimpleStreamPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D1499304C9BFF426708122 /* Pods_SimpleStreamPlayer.framework */; };
+		BA8B300047C10B95DEA00600 /* Pods_SimpleStreamPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FAB715998375D154DFFBE6 /* Pods_SimpleStreamPlayerUITests.framework */; };
+		C1DDB6F587A1B5D9F06EBFF8 /* Pods_SimpleStreamPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE1923E931E7924408A909D /* Pods_SimpleStreamPlayerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01D618F01EB51663004DD49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D618CE1EB51662004DD49C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D618D51EB51662004DD49C;
+			remoteInfo = SimpleStreamPlayer;
+		};
+		01D618FB1EB51663004DD49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D618CE1EB51662004DD49C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D618D51EB51662004DD49C;
+			remoteInfo = SimpleStreamPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D618D61EB51662004DD49C /* SimpleStreamPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleStreamPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D618D91EB51662004DD49C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01D618DC1EB51662004DD49C /* SimpleStreamPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleStreamPlayer.xcdatamodel; sourceTree = "<group>"; };
+		01D618DE1EB51662004DD49C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		01D618E01EB51662004DD49C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		01D618E31EB51662004DD49C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01D618E51EB51662004DD49C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D618E81EB51662004DD49C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01D618EA1EB51662004DD49C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D618EF1EB51663004DD49C /* SimpleStreamPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleStreamPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D618F31EB51663004DD49C /* SimpleStreamPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStreamPlayerTests.swift; sourceTree = "<group>"; };
+		01D618F51EB51663004DD49C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D618FA1EB51663004DD49C /* SimpleStreamPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleStreamPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D618FE1EB51663004DD49C /* SimpleStreamPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStreamPlayerUITests.swift; sourceTree = "<group>"; };
+		01D619001EB51663004DD49C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D117366F792EEF6CDA02977 /* Pods-SimpleStreamPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleStreamPlayerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleStreamPlayerUITests/Pods-SimpleStreamPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2732DF021FEC37FC9DC787D6 /* Pods-SimpleStreamPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleStreamPlayerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleStreamPlayerTests/Pods-SimpleStreamPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30FAB715998375D154DFFBE6 /* Pods_SimpleStreamPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleStreamPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F4C2F13E4F9F947DECA60A /* Pods-SimpleStreamPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleStreamPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleStreamPlayer/Pods-SimpleStreamPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		45D1499304C9BFF426708122 /* Pods_SimpleStreamPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleStreamPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE1923E931E7924408A909D /* Pods_SimpleStreamPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleStreamPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		512E9BC19531A7087A6B5381 /* Pods-SimpleStreamPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleStreamPlayerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleStreamPlayerUITests/Pods-SimpleStreamPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BAC520AE28977669E2BA8D03 /* Pods-SimpleStreamPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleStreamPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleStreamPlayer/Pods-SimpleStreamPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		C2075CAE54B20B9FCD2A3D91 /* Pods-SimpleStreamPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleStreamPlayerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleStreamPlayerTests/Pods-SimpleStreamPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D618D31EB51662004DD49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6EF6EF978554955F1D020C /* Pods_SimpleStreamPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D618EC1EB51663004DD49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DDB6F587A1B5D9F06EBFF8 /* Pods_SimpleStreamPlayerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D618F71EB51663004DD49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8B300047C10B95DEA00600 /* Pods_SimpleStreamPlayerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D618CD1EB51662004DD49C = {
+			isa = PBXGroup;
+			children = (
+				01D618D81EB51662004DD49C /* SimpleStreamPlayer */,
+				01D618F21EB51663004DD49C /* SimpleStreamPlayerTests */,
+				01D618FD1EB51663004DD49C /* SimpleStreamPlayerUITests */,
+				01D618D71EB51662004DD49C /* Products */,
+				7185A4C912F5E2FD5643F236 /* Pods */,
+				E03417D95E879F0121C10AC0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01D618D71EB51662004DD49C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01D618D61EB51662004DD49C /* SimpleStreamPlayer.app */,
+				01D618EF1EB51663004DD49C /* SimpleStreamPlayerTests.xctest */,
+				01D618FA1EB51663004DD49C /* SimpleStreamPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D618D81EB51662004DD49C /* SimpleStreamPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				01D618D91EB51662004DD49C /* AppDelegate.swift */,
+				01D618DE1EB51662004DD49C /* MasterViewController.swift */,
+				01D618E01EB51662004DD49C /* DetailViewController.swift */,
+				01D618E21EB51662004DD49C /* Main.storyboard */,
+				01D618E51EB51662004DD49C /* Assets.xcassets */,
+				01D618E71EB51662004DD49C /* LaunchScreen.storyboard */,
+				01D618EA1EB51662004DD49C /* Info.plist */,
+				01D618DB1EB51662004DD49C /* SimpleStreamPlayer.xcdatamodeld */,
+			);
+			path = SimpleStreamPlayer;
+			sourceTree = "<group>";
+		};
+		01D618F21EB51663004DD49C /* SimpleStreamPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				01D618F31EB51663004DD49C /* SimpleStreamPlayerTests.swift */,
+				01D618F51EB51663004DD49C /* Info.plist */,
+			);
+			path = SimpleStreamPlayerTests;
+			sourceTree = "<group>";
+		};
+		01D618FD1EB51663004DD49C /* SimpleStreamPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01D618FE1EB51663004DD49C /* SimpleStreamPlayerUITests.swift */,
+				01D619001EB51663004DD49C /* Info.plist */,
+			);
+			path = SimpleStreamPlayerUITests;
+			sourceTree = "<group>";
+		};
+		7185A4C912F5E2FD5643F236 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAC520AE28977669E2BA8D03 /* Pods-SimpleStreamPlayer.debug.xcconfig */,
+				33F4C2F13E4F9F947DECA60A /* Pods-SimpleStreamPlayer.release.xcconfig */,
+				2732DF021FEC37FC9DC787D6 /* Pods-SimpleStreamPlayerTests.debug.xcconfig */,
+				C2075CAE54B20B9FCD2A3D91 /* Pods-SimpleStreamPlayerTests.release.xcconfig */,
+				0D117366F792EEF6CDA02977 /* Pods-SimpleStreamPlayerUITests.debug.xcconfig */,
+				512E9BC19531A7087A6B5381 /* Pods-SimpleStreamPlayerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E03417D95E879F0121C10AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45D1499304C9BFF426708122 /* Pods_SimpleStreamPlayer.framework */,
+				4FE1923E931E7924408A909D /* Pods_SimpleStreamPlayerTests.framework */,
+				30FAB715998375D154DFFBE6 /* Pods_SimpleStreamPlayerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01D618D51EB51662004DD49C /* SimpleStreamPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D619031EB51663004DD49C /* Build configuration list for PBXNativeTarget "SimpleStreamPlayer" */;
+			buildPhases = (
+				B9C2F7616CD0888272B58F34 /* [CP] Check Pods Manifest.lock */,
+				01D618D21EB51662004DD49C /* Sources */,
+				01D618D31EB51662004DD49C /* Frameworks */,
+				01D618D41EB51662004DD49C /* Resources */,
+				5D18E96EEA5831D2D2E0E42E /* [CP] Embed Pods Frameworks */,
+				56F57C7D949C101C0B980B4C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleStreamPlayer;
+			productName = SimpleStreamPlayer;
+			productReference = 01D618D61EB51662004DD49C /* SimpleStreamPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01D618EE1EB51663004DD49C /* SimpleStreamPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D619061EB51663004DD49C /* Build configuration list for PBXNativeTarget "SimpleStreamPlayerTests" */;
+			buildPhases = (
+				AB5DD7365E0565F490948BED /* [CP] Check Pods Manifest.lock */,
+				01D618EB1EB51663004DD49C /* Sources */,
+				01D618EC1EB51663004DD49C /* Frameworks */,
+				01D618ED1EB51663004DD49C /* Resources */,
+				C8A325326F458ADA7D224931 /* [CP] Embed Pods Frameworks */,
+				1E0B43938160DA732F03D50C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D618F11EB51663004DD49C /* PBXTargetDependency */,
+			);
+			name = SimpleStreamPlayerTests;
+			productName = SimpleStreamPlayerTests;
+			productReference = 01D618EF1EB51663004DD49C /* SimpleStreamPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01D618F91EB51663004DD49C /* SimpleStreamPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D619091EB51663004DD49C /* Build configuration list for PBXNativeTarget "SimpleStreamPlayerUITests" */;
+			buildPhases = (
+				C04932FC3BABF176E97D42BB /* [CP] Check Pods Manifest.lock */,
+				01D618F61EB51663004DD49C /* Sources */,
+				01D618F71EB51663004DD49C /* Frameworks */,
+				01D618F81EB51663004DD49C /* Resources */,
+				75AFE145102E9703F76E02CF /* [CP] Embed Pods Frameworks */,
+				422186F9B342C0831B76A15D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D618FC1EB51663004DD49C /* PBXTargetDependency */,
+			);
+			name = SimpleStreamPlayerUITests;
+			productName = SimpleStreamPlayerUITests;
+			productReference = 01D618FA1EB51663004DD49C /* SimpleStreamPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D618CE1EB51662004DD49C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mackode - Bartlomiej Makowski";
+				TargetAttributes = {
+					01D618D51EB51662004DD49C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L2B94KJQ38;
+						ProvisioningStyle = Automatic;
+					};
+					01D618EE1EB51663004DD49C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L2B94KJQ38;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 01D618D51EB51662004DD49C;
+					};
+					01D618F91EB51663004DD49C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L2B94KJQ38;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 01D618D51EB51662004DD49C;
+					};
+				};
+			};
+			buildConfigurationList = 01D618D11EB51662004DD49C /* Build configuration list for PBXProject "SimpleStreamPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01D618CD1EB51662004DD49C;
+			productRefGroup = 01D618D71EB51662004DD49C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01D618D51EB51662004DD49C /* SimpleStreamPlayer */,
+				01D618EE1EB51663004DD49C /* SimpleStreamPlayerTests */,
+				01D618F91EB51663004DD49C /* SimpleStreamPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01D618D41EB51662004DD49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D618E91EB51662004DD49C /* LaunchScreen.storyboard in Resources */,
+				01D618E61EB51662004DD49C /* Assets.xcassets in Resources */,
+				01D618E41EB51662004DD49C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D618ED1EB51663004DD49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D618F81EB51663004DD49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E0B43938160DA732F03D50C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleStreamPlayerTests/Pods-SimpleStreamPlayerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		422186F9B342C0831B76A15D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleStreamPlayerUITests/Pods-SimpleStreamPlayerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56F57C7D949C101C0B980B4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleStreamPlayer/Pods-SimpleStreamPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D18E96EEA5831D2D2E0E42E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleStreamPlayer/Pods-SimpleStreamPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75AFE145102E9703F76E02CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleStreamPlayerUITests/Pods-SimpleStreamPlayerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5DD7365E0565F490948BED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C2F7616CD0888272B58F34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C04932FC3BABF176E97D42BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A325326F458ADA7D224931 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleStreamPlayerTests/Pods-SimpleStreamPlayerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D618D21EB51662004DD49C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D618DD1EB51662004DD49C /* SimpleStreamPlayer.xcdatamodeld in Sources */,
+				01D618DA1EB51662004DD49C /* AppDelegate.swift in Sources */,
+				01D618DF1EB51662004DD49C /* MasterViewController.swift in Sources */,
+				01D618E11EB51662004DD49C /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D618EB1EB51663004DD49C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D618F41EB51663004DD49C /* SimpleStreamPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D618F61EB51663004DD49C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D618FF1EB51663004DD49C /* SimpleStreamPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01D618F11EB51663004DD49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D618D51EB51662004DD49C /* SimpleStreamPlayer */;
+			targetProxy = 01D618F01EB51663004DD49C /* PBXContainerItemProxy */;
+		};
+		01D618FC1EB51663004DD49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D618D51EB51662004DD49C /* SimpleStreamPlayer */;
+			targetProxy = 01D618FB1EB51663004DD49C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01D618E21EB51662004DD49C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D618E31EB51662004DD49C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01D618E71EB51662004DD49C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D618E81EB51662004DD49C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01D619011EB51663004DD49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01D619021EB51663004DD49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01D619041EB51663004DD49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC520AE28977669E2BA8D03 /* Pods-SimpleStreamPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2B94KJQ38;
+				INFOPLIST_FILE = SimpleStreamPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mackode.SimpleStreamPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		01D619051EB51663004DD49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F4C2F13E4F9F947DECA60A /* Pods-SimpleStreamPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2B94KJQ38;
+				INFOPLIST_FILE = SimpleStreamPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mackode.SimpleStreamPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		01D619071EB51663004DD49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2732DF021FEC37FC9DC787D6 /* Pods-SimpleStreamPlayerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L2B94KJQ38;
+				INFOPLIST_FILE = SimpleStreamPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mackode.SimpleStreamPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleStreamPlayer.app/SimpleStreamPlayer";
+			};
+			name = Debug;
+		};
+		01D619081EB51663004DD49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2075CAE54B20B9FCD2A3D91 /* Pods-SimpleStreamPlayerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L2B94KJQ38;
+				INFOPLIST_FILE = SimpleStreamPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mackode.SimpleStreamPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleStreamPlayer.app/SimpleStreamPlayer";
+			};
+			name = Release;
+		};
+		01D6190A1EB51663004DD49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D117366F792EEF6CDA02977 /* Pods-SimpleStreamPlayerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L2B94KJQ38;
+				INFOPLIST_FILE = SimpleStreamPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mackode.SimpleStreamPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SimpleStreamPlayer;
+			};
+			name = Debug;
+		};
+		01D6190B1EB51663004DD49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512E9BC19531A7087A6B5381 /* Pods-SimpleStreamPlayerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L2B94KJQ38;
+				INFOPLIST_FILE = SimpleStreamPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mackode.SimpleStreamPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SimpleStreamPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01D618D11EB51662004DD49C /* Build configuration list for PBXProject "SimpleStreamPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D619011EB51663004DD49C /* Debug */,
+				01D619021EB51663004DD49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D619031EB51663004DD49C /* Build configuration list for PBXNativeTarget "SimpleStreamPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D619041EB51663004DD49C /* Debug */,
+				01D619051EB51663004DD49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01D619061EB51663004DD49C /* Build configuration list for PBXNativeTarget "SimpleStreamPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D619071EB51663004DD49C /* Debug */,
+				01D619081EB51663004DD49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01D619091EB51663004DD49C /* Build configuration list for PBXNativeTarget "SimpleStreamPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D6190A1EB51663004DD49C /* Debug */,
+				01D6190B1EB51663004DD49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		01D618DB1EB51662004DD49C /* SimpleStreamPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				01D618DC1EB51662004DD49C /* SimpleStreamPlayer.xcdatamodel */,
+			);
+			currentVersion = 01D618DC1EB51662004DD49C /* SimpleStreamPlayer.xcdatamodel */;
+			path = SimpleStreamPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 01D618CE1EB51662004DD49C /* Project object */;
+}
