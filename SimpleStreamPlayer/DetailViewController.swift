@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class DetailViewController: UIViewController {
 
@@ -15,18 +16,26 @@ class DetailViewController: UIViewController {
 
     func configureView() {
         // Update the user interface for the detail item.
-        //if let detail = detailItem {
-            /*
-            if let label = detailDescriptionLabel {
-                label.text = detail.timestamp!.description
-            }
-            */
-        //}
+        guard let detail = detailItem else { return }
+        guard let url = detail.url else { return }
+        print(url)
+        
+        let videoURL = URL(string: url)
+        let player = AVPlayer(url: videoURL!)
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = self.view.bounds
+        
+        playerView.layer.addSublayer(playerLayer)
+        player.play()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         configureView()
     }
 
